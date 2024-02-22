@@ -51,6 +51,7 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
   gem 'rspec-rails', '~> 6.1.0'
+  gem "standard"
 end
 
 group :development do
@@ -71,3 +72,6 @@ group :test do
 end
 
 gem 'rubocop', '~> 1.60', require: false
+gem 'rubocop-rails', require: false
+gem "shadcn-ui", "~> 0.0.12"
+gem 'rubocop-rspec', require: false
